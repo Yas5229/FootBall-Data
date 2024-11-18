@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Arena</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"> <!-- Boxicons -->
+    <style>
+        html, body {
+            height: 100%; /* Ensure body takes full height */
+            margin: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://img.freepik.com/free-photo/close-up-athlete-playing-soccer_23-2150845600.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center elements horizontally */
+        }
+        /* Flex container for full height */
+        .content {
+            flex: 1; /* Make content grow to fill space */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Overlay to improve readability */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+            z-index: -1;
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 0, 0, 0.8); /* Semi-transparent background */
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+        .logo {
+            width: 50px; /* Logo width */
+            margin-right: 10px; /* Space between logo and title */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent container background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto; /* Center the container with margin */
+        }
+        .button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(255, 0, 0, 0.8); /* Red color */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: rgba(255, 0, 0, 1); /* Darker red on hover */
+        }
+        .button i {
+            margin-right: 8px; /* Spacing between icon and text */
+        }
+        .personal-space {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ff5e57;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        .contact-footer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Footer at the Top -->
+    <div class="contact-footer">
+        <p>Phone: +91-8977602529 | E-Mail: yaswanthvali2004@gmail.com</p>
+    </div>
+
+    <!-- Overlay for improving text visibility -->
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>
+            
+            Football Arena
+        </h1>
+
+        <div class="container">
+            <a href="/players.html" class="button"><i class='bx bx-user'></i>View Players</a>
+            <a href="/teams.html" class="button"><i class='bx bx-group'></i>View Teams</a>
+        </div>
+
+        <div class="personal-space">
+            <h2>My Personal Space</h2>
+            <a href="https://github.com/Yas5229" class="button"><i class='bx bxl-github'></i>GitHub</a>
+            <a href="https://www.linkedin.com/in/yaswanth-vali-175188247/" class="button"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Stylish Footer -->
+    <footer>
+        <p>&copy; 2024 Football Arena. All rights reserved. | Trademark &trade; Yaswanth Reddy</p>
+        <p>Special thanks to Girish</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
